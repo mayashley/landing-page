@@ -1,0 +1,45 @@
+
+.logo > img {
+    width: 100%;
+    height:100%;
+    max-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    background-color: white;
+ }
+
+  .page-wrap {
+      background-color:white;
+      font-size: 20px;
+      color: black;
+      border: 4px solid black;
+  }
+
+  li {
+      padding-bottom: 10px;
+  }
+
+  ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 50%;
+      
+  }
+  
+  body {
+      background-image: url("https://images.unsplash.com/photo-1485982353291-4f167f9dee32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  }
+
+
+  .buttons { 
+      margin: 5px;
+      padding-left: 1000px;
+  }
+
+
+
+
