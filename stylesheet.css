@@ -8,10 +8,10 @@ nav {
     rgba(26, 25, 25, 0) 100%
   );
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 30px 10;
 }
 
-nav ul {
+ nav ul {
   text-align: center;
   background: linear-gradient(
     90deg,
@@ -23,13 +23,14 @@ nav ul {
   box-shadow: 0 0 25px rgb(1, 28, 32), inset 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
-nav ul li {
+ nav ul li {
   display: inline-block;
 }
 
-nav ul li a {
-  padding: 22px;
-  font-family: "Shadows Into Light", cursive;
+ nav ul li a {
+  padding: 20px;
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   color: rgba(8, 27, 27, 0.993);
   font-size: 24px;
@@ -37,18 +38,47 @@ nav ul li a {
   display: block;
 }
 
-nav ul li a:hover {
+ ul li a:hover {
   color: rgba(245, 243, 247, 0.904);
   transition: all 0.2s ease-in-out;
-  transform: scale(2.1);
+  transform: scale(1.5);
 }
 
 body {
   background-image: url("https://images.unsplash.com/photo-1485982353291-4f167f9dee32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
 }
 
+
 h1 {
-  display: flex;
-  justify-content: center;
   font-size: 40px;
 }
+
+.display-content-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.email {
+  width: 100%;
+  font-size: 18px;
+}
+
+ img {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border: 2px solid red;
+  margin-right: 400px;
+ 
+}
+
+
+
+
+
+
