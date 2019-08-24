@@ -5,52 +5,74 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <link
-    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-
- 
+      <link
+      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <!-- Google fonts go here^^^^^^^ -->
 
   <body>
-  <div class="nav-bar">
-    <nav>  
-      <ul> 
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  
-    <div class="hero">
-      <h1 class="display-content-flex">U.S.A Vactions</h1>
-      <div class="email display-content-flex">
-        <form action="/action_page.php">
-         <input type="email" name="email-address" placeholder="Please enter your email here" style="width:250px;" required />
-        </form>
+    <div class="nav-bar">
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="vertical-column page-outline">
+      <div class="hero vertical-column">
+        <h1>U.S.A Vacations</h1>
+        <input
+          type="email"
+          name="email-address"
+          placeholder="Please enter your email here"
+          style="width:250px;"
+          required
+        />
+        <input class="submit-button" type="submit" value="Submit" />
       </div>
 
-      <div class="submit-button">
-          <form action="/action_page.php">
-            <input type="submit" value="Submit">
-          </form>
+      <div class="info vertical-column">
+
+        <div class="horizontal-row">
+          <div class="col-25">
+            <p> Placeholder</p>
+          </div>
+          <div class="col-75">
+            <p class="boldParagraph">The Hottest Destinations</p>
+            <p>Choose from over 100 members only destinations.</p>
+          </div>
+        </div>
+
+        <div class="horizontal-row">
+        <div class="col-25">
+          <p>placeholder</p>
+        </div>
+        <div class="col-75">
+        <p class="boldParagraph">Affordable</p>
+        <p>Choose from 3 diffrent payment plans.</p>
+      </div>
     </div>
 
-    <div class="info">
-    <h2>The Hottest Destinations</h2>
-    <p>Choose from over 100 members only destinations.</p>
-    <h3>Affordable</h3>
-      <p>Choose from 3 diffrent payment plans.</p>
-   <h4>FIVE Star Rateing</h4>
-   <p>We have recieved  a five star rating 10 years in row.</p>
-  </div>
-
+    <div class="horizontal-row">
+      <div class="col-25">
+        <p>placeholder</p>
+      </div>
+      <div class="col-75">
+        <p class="boldParagraph">FIVE Star Rateing</p>
+        <p>We have recieved a five star rating 10 years in row.</p>
+      </div>
+    </div>
+    </div>
     </div>
   </body>
 </html>

@@ -11,7 +11,7 @@
   padding: 30px 10;
 }
 
- nav ul {
+ nav > ul {
   text-align: center;
   background: linear-gradient(
     90deg,
@@ -23,11 +23,11 @@
   box-shadow: 0 0 25px rgb(1, 28, 32), inset 0 0 1px rgba(255, 255, 255, 0.5);
 }
 
- nav ul li {
+ nav > ul > li {
   display: inline-block;
 }
 
- nav ul li a {
+ nav > ul > li > a {
   padding: 10px;
   margin: 20px;
   font-family: 'Oswald', sans-serif;
@@ -41,70 +41,62 @@
  ul li a:hover {
   color: rgba(245, 243, 247, 0.904);
   transition: all 0.2s ease-in-out;
-  transform: scale(1.5);
 }
 
 body {
+  min-height: 100vh;
   background-image: url("https://images.unsplash.com/photo-1485982353291-4f167f9dee32?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 
 h1 {
   font-size: 40px;
-  border: 3px solid yellow;
+  /* border: 3px solid yellow; */
 }
-
-.display-content-flex {
+.page-outline {
+  border: 1px solid yellow;
+}
+.vertical-column {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-
-.email {
+.horizontal-row {
+  display: flex;
   width: 100%;
-  font-size: 18px;
-  border: 2px solid purple;
+  border: 1px solid blue;
 }
-
-
+.hero {
+  border: 1px solid red;
+}
 
 .submit-button {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  border: 3px solid green;
-  width: 100%;
+  /* border: none; */
+  background-color: transparent;
 }
 
 .info {
+  width: 60%;
   border: 2px solid orange;
 }
-
-.info h2 {
-  font-size: 30px;
-  font-family: 'Oswald', sans-serif;
-  display: flex;
-  justify-content: center;
-  border: 2px solid white;
+.col-25 {
+  width: 25%;
+  border: 1px solid red;
 }
-.info h3 {
-  font-size: 30px;
-  font-family: 'Oswald', sans-serif;
-  display: flex;
-  justify-content: center;
-  border: 3px solid grey;
+.col-75 {
+  width: 75%;
+  border: 1px solid pink;
 }
-.info h4 {
+.boldParagraph {
   font-size: 30px;
+  font-weight: bold;
   font-family: 'Oswald', sans-serif;
-  display: flex;
-  justify-content: center;
-  border: 2px solid brown;
 }
-
 p {
   font-size: 20px;
-  display: flex;
-  justify-content: center;
 }
 
 
