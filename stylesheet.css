@@ -1,17 +1,6 @@
-.nav-bar nav {
-  max-width: 100%;
-  mask-image: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.329) 0%,
-    #222121 25%,
-    #302e2e 75%,
-    rgba(26, 25, 25, 0) 100%
-  );
-  margin: 0 auto;
-  padding: 30px 10;
-}
-
- nav > ul {
+nav {
+  display: flex;
+  height: 80px;
   text-align: center;
   background: linear-gradient(
     90deg,
@@ -21,17 +10,33 @@
     rgba(83, 82, 82, 0.116) 100%
   );
   box-shadow: 0 0 25px rgb(1, 28, 32), inset 0 0 1px rgba(255, 255, 255, 0.5);
-  
+  width: 100%;
+  mask-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.329) 0%,
+    #222121 25%,
+    #302e2e 75%,
+    rgba(26, 25, 25, 0) 100%
+  );
+  margin: 0 auto;
 }
-
- nav > ul > li {
+ul {
+  padding: 0;
+  margin: 0;
+}
+.links {
+  width: 100%;
+  border: 2px solid green;
+}
+.links > ul > li {
   display: inline-block;
+  border: 2px solid pink;
 }
 
- nav > ul > li > a {
+.links > ul > li > a {
   padding: 10px;
   margin: 10px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   color: rgba(8, 27, 27, 0.993);
   font-size: 24px;
@@ -39,10 +44,9 @@
   display: block;
 }
 
- ul li a:hover {
+ul li a:hover {
   color: rgba(245, 243, 247, 0.904);
   transition: all 0.2s ease-in-out;
-
 }
 
 body {
@@ -52,7 +56,6 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 
 h1 {
   font-size: 40px;
@@ -80,9 +83,7 @@ h1 {
   background-color: rgba(255, 255, 255, 0.459);
   font-size: 24px;
   margin: 30px;
- 
 }
-
 
 .info {
   width: 60%;
@@ -94,9 +95,8 @@ h1 {
   display: flex;
   align-items: center;
   color: rgba(0, 0, 0, 0.719);
- padding-left: 2px;
+  padding-left: 2px;
 }
-
 
 .col-75 {
   width: 90%;
@@ -105,13 +105,17 @@ h1 {
 .boldParagraph {
   font-size: 30px;
   font-weight: bold;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 p {
   font-size: 22px;
-  color:white;
+  color: white;
   margin: 8px;
+}
 
+.member-levels {
+  display: flex;
+  flex-direction: row;
 }
 
 .member {
@@ -119,7 +123,7 @@ p {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 33.33%;
+  width: calc(100% / 3);
   margin: 10px;
   border-radius: 3px;
   background-color: white;
@@ -154,21 +158,23 @@ p {
   font-weight: 400;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+}
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
 .footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.356) ;
+  background-color: rgba(255, 255, 255, 0.356);
   color: purple;
   text-align: center;
   margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
