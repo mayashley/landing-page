@@ -1,16 +1,15 @@
 nav {
   display: flex;
+  position: fixed;
   height: 80px;
   text-align: center;
-  background: linear-gradient(
-    90deg,
-    rgba(83, 82, 82, 0.116) 0%,
-    rgba(255, 255, 255, 0.356) 25%,
-    rgba(255, 255, 255, 0.356) 75%,
-    rgba(83, 82, 82, 0.116) 100%
-  );
+  
   box-shadow: 0 0 25px rgb(1, 28, 32), inset 0 0 1px rgba(255, 255, 255, 0.5);
   width: 100%;
+  
+  margin: 0 auto;
+}
+.transparent {
   mask-image: linear-gradient(
     90deg,
     rgba(255, 255, 255, 0.329) 0%,
@@ -18,7 +17,16 @@ nav {
     #302e2e 75%,
     rgba(26, 25, 25, 0) 100%
   );
-  margin: 0 auto;
+  background: linear-gradient(
+    90deg,
+    rgba(83, 82, 82, 0.116) 0%,
+    rgba(255, 255, 255, 0.356) 25%,
+    rgba(255, 255, 255, 0.356) 75%,
+    rgba(83, 82, 82, 0.116) 100%
+  );
+}
+.regular-bg {
+  background-color: rgb(110, 106, 106);
 }
 ul {
   padding: 0;
@@ -38,14 +46,14 @@ ul {
   margin: 10px;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  color: rgba(8, 27, 27, 0.993);
+  color: rgba(2, 5, 5, 0.993);
   font-size: 24px;
   text-decoration: none;
   display: block;
 }
 
 ul li a:hover {
-  color: rgba(245, 243, 247, 0.904);
+  color: rgb(245, 243, 247);
   transition: all 0.2s ease-in-out;
 }
 
@@ -63,6 +71,7 @@ h1 {
 }
 .page-outline {
   border: 1px solid yellow;
+  padding-top: 100px;
 }
 .vertical-column {
   display: flex;
@@ -97,7 +106,14 @@ h1 {
   color: rgba(0, 0, 0, 0.719);
   padding-left: 2px;
 }
+.col-25> span {
+  font-size: 40px;
+}
 
+.icons {
+  height: 40px;
+  width: 40px;
+}
 .col-75 {
   width: 90%;
   border: 1px solid pink;
@@ -109,7 +125,7 @@ h1 {
 }
 p {
   font-size: 22px;
-  color: white;
+  color: rgb(10, 10, 10);
   margin: 8px;
 }
 
@@ -122,21 +138,23 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  border: 3px solid black;
   width: calc(100% / 3);
   margin: 10px;
   border-radius: 3px;
   background-color: white;
+  
 }
 
 .member > .level {
-  background-color: rgba(41, 40, 40, 0.068);
+  background-color: rgba(17, 17, 17, 0.658);
   color: black;
-  padding: 10px;
+  padding: 10px 0;
   width: 100%;
   text-transform: uppercase;
   font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
 
 .member > h2 {
@@ -145,17 +163,29 @@ p {
 
 .member > ol {
   margin: 10px;
+  list-style: none;
+  min-height:160px;
 }
 
 .member > ol > li {
   padding: 5px;
+  font-size: 20px;
+
+  
 }
 
 .member > button {
-  border: 3;
-  margin: 15px 0;
-  background-color: silver;
-  font-weight: 400;
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  
+
 }
 
 .logo-container {
@@ -165,16 +195,55 @@ p {
   width: 5%;
 }
 .logo {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .footer {
   width: 100%;
   left: 0;
   bottom: 0;
-  background-color: rgba(255, 255, 255, 0.356);
+  background-color: rgb(110, 106, 106);
   color: purple;
   text-align: center;
   margin-top: 10px;
+  border: 1px solid black;
 }
+
+.video {
+  padding: 30px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.267);
+
+}
+
+
+@media only screen and (max-width: 667px) {
+  .member-levels {
+    flex-direction: column;
+  }
+  .member {
+    width: 100%
+  }
+  .logo-container {
+    width: 15%;
+  }
+  .col-25 {
+    width: 25%;
+  }
+.col-75 {
+width: 75%;
+}
+.logo {
+  width:50px;
+  height: 50px;
+}
+
+}
+
+@media only screen and ( min-width: 668px) and (max-width: 1015px) {
+  .logo-container {
+width: 10%;
+  }
+}
+

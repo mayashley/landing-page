@@ -5,41 +5,42 @@
     <title>Landing Page</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
     <link
-      <link
       href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
       rel="stylesheet"
     />
   </head>
   <!-- Google fonts go here^^^^^^^ -->
- 
+
   <body>
     <div class="nav-bar">
-      <nav>
-          <div class="logo-container">
-              <img id="header-image"
-              class="logo"
-              src="./airplane-around-earth.png" alt="letter v logo"/>
-          </div>
-          <div class="links">
-        <ul>
-          <li>
-            <a href="#">Home</a>
-          </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <div class="logo-container">
-      </div>
+      <nav class="transparent" id="mynav">
+        <div class="logo-container">
+          <img
+            id="header-image"
+            class="logo"
+            src="./airplane-around-earth.png"
+            alt="letter v logo"
+          />
+        </div>
+        <div class="links">
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#pricing">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo-container"></div>
       </nav>
     </div>
-    <div class="vertical-column page-outline">
+    <div class="vertical-column page-outline" id="home">
       <div class="hero vertical-column">
-        <h1>U.S.A Vacations</h1>
+        <h1>Fake U.S.A Vacations</h1>
         <input
           type="email"
           name="email-address"
@@ -53,7 +54,12 @@
       <div class="info vertical-column">
         <div class="horizontal-row">
           <div class="col-25">
-            <span style="font-size:70px;">&#9992;</span>
+              <img
+              id="plane-image"
+              class="icons"
+              src="./black-plane.png"
+              alt="black-plane"
+            />
           </div>
           <div class="col-75">
             <p class="boldParagraph">The Hottest Destinations</p>
@@ -63,7 +69,12 @@
 
         <div class="horizontal-row">
           <div class="col-25">
-            <span style="font-size:70px;">&#0036;</span>
+              <img
+              id="boat-image"
+              class="icons"
+              src="./boat-from-front-view.png"
+              alt="black boat"
+            />
           </div>
           <div class="col-75">
             <p class="boldParagraph">Affordable</p>
@@ -74,7 +85,12 @@
         <div class="horizontal-row">
           <div class="col-25">
             <div class="rating">
-              <span style="font-size:70px;">&#10029;</span>
+                <img
+                id="car-image"
+                class="icons"
+                src="./volkswagen-car-side-view.png"
+                alt="black car"
+              />
             </div>
           </div>
           <div class="col-75">
@@ -82,65 +98,81 @@
             <p>We have recieved a five star rating 10 years in a row.</p>
           </div>
         </div>
+      </div>
+
+      <div class="video" id="about">
+        <iframe
+          width="420"
+          height="315"
+          src="https://www.youtube.com/embed/EzalOeWRcqE"
+        >
+        </iframe>
+      </div>
+    
+      <div class="member-levels" id="pricing">
+        <div class="member">
+          <div class="level">
+            <p class="member-title">Bronze</p>
+          </div>
+          <h2>$500</h2>
+          <ol>
+            <li>1 Vaction per calendar year.</li>
+            <li>Rental car discount.</li>
+          </ol>
+          <button type="button" class="button">Select</button>
         </div>
-     
-        
-      
 
+        <div class="member">
+          <div class="level"><p class="member-title">Silver</p></div>
+          <h2>$1,000</h2>
+          <ol>
+            <li>2 Vactions per calendar year.</li>
+            <li>Rental car assistance.</li>
+            <li>Airfare discount.</li>
+          </ol>
+          <button type="button" class="button">Select</button>
+        </div>
 
-      <div class="video">
-        <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Q2c2mPpvcpw">
-</iframe> 
-</div>
- <!-- why is the video not playing????? -->
- <div= class="member-levels">
- <div class="member  ">
-  <div class="level">Bronze</div>
-  <h2>$500</h2>
-  <ol>
-    <li>1 Vaction per calendar year.</li>
-    <li>Rental car discount.</li>
-  </ol>
-  <button class="btn">Select</button>
-</div>
+        <div class="member">
+          <div class="level"><p class="member-title">Gold</p></div>
+          <h2>$2,000</h2>
+          <ol>
+            <li>3 Vactions per calendar year.</li>
+            <li>Rental car assistance.</li>
+            <li>Airfare discount.</li>
+            <li>FREE hotel room upgrades.</li>
+          </ol>
+          <button type="button" class="button">Select</button>
+        </div>
+      </div>
 
-<div class="member">
-  <div class="level" id="bronze">Silver</div>
-  <h2>$1,000</h2>
-  <ol>
-    <li>2 Vactions per calendar year.</li>
-    <li>Rental car assistance.</li>
-    <li>Airfare discount.</li>
-  </ol>
-  <button class="btn">Select</button>
-</div>
-
-<div class="member">
-  <div class="level">Gold</div>
-  <h2>$2,000</h2>
-  <ol>
-    <li>3 Vactions per calendar year.</li>
-    <li>Rental car assistance.</li>
-    <li>Airfare discount.</li>
-    <li>FREE hotel room upgrades.</li>
-  </ol>
-  <button class="button">Select</button>
-</div>
-</div>
-
-
-
-
-<div class="footer">
-<footer>
-  <p>Posted by: U.S.A Vactions</p>
-  <p>Contact information: <a href="fakeUSAvactions.com">
-  fakeUSAvaction@fakemail.com</a>.</p>
-</footer> 
-
-
-       </div>
+      <div class="footer" id="contact">
+        <footer>
+          <p>Posted by: Fake U.S.A Vactions</p>
+          <p>
+            Contact information:
+            <a href="fakeUSAvactions.com"> fakeUSAvaction@fakemail.com</a>.
+          </p>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"         title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        </footer>
+      </div>
     </div>
+
+    <script>
+      var myNav = document.getElementById("mynav");
+      var home = document.getElementById("home");
+      window.onscroll = function() {
+        "use strict";
+        if (window.pageYOffset >= 10) {
+          console.log("regular-bg");
+          myNav.classList.add("regular-bg");
+          myNav.classList.remove("transparent");
+        } else {
+          myNav.classList.add("transparent");
+          myNav.classList.remove("regular-bg");
+        }
+      };
+    </script>
+
   </body>
 </html>
