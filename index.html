@@ -12,8 +12,8 @@
   <!-- Google fonts go here^^^^^^^ -->
 
   <body>
-    <div class="nav-bar">
-      <nav class="transparent" id="mynav">
+    <header id="header">
+      <nav class="transparent" id="nav-bar">
         <div class="logo-container">
           <img
             id="header-image"
@@ -25,36 +25,44 @@
         <div class="links">
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li>
-              <a href="#pricing">About</a>
+              <a class="nav-link" href="#pricing">About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
         <div class="logo-container"></div>
       </nav>
-    </div>
+    </header>
     <div class="vertical-column page-outline" id="home">
       <div class="hero vertical-column">
         <h1>Fake U.S.A Vacations</h1>
-        <input
-          type="email"
-          name="email-address"
-          placeholder="Please enter your email here"
-          style="width:250px;"
-          required
-        />
-        <input class="submit-button" type="submit" value="Submit" />
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            id="email"
+            type="email"
+            name="email-address"
+            placeholder="Please enter your email here"
+            style="width:250px;"
+            required
+          />
+          <input
+            class="submit-button"
+            type="submit"
+            value="Submit"
+            id="submit"
+          />
+        </form>
       </div>
 
       <div class="info vertical-column">
         <div class="horizontal-row">
           <div class="col-25">
-              <img
+            <img
               id="plane-image"
               class="icons"
               src="./black-plane.png"
@@ -69,7 +77,7 @@
 
         <div class="horizontal-row">
           <div class="col-25">
-              <img
+            <img
               id="boat-image"
               class="icons"
               src="./boat-from-front-view.png"
@@ -85,7 +93,7 @@
         <div class="horizontal-row">
           <div class="col-25">
             <div class="rating">
-                <img
+              <img
                 id="car-image"
                 class="icons"
                 src="./volkswagen-car-side-view.png"
@@ -100,15 +108,15 @@
         </div>
       </div>
 
-      <div class="video" id="about">
-        <iframe
+      <div class="video">
+        <iframe id="video"
           width="420"
           height="315"
           src="https://www.youtube.com/embed/EzalOeWRcqE"
         >
         </iframe>
       </div>
-    
+
       <div class="member-levels" id="pricing">
         <div class="member">
           <div class="level">
@@ -153,13 +161,29 @@
             Contact information:
             <a href="fakeUSAvactions.com"> fakeUSAvaction@fakemail.com</a>.
           </p>
-          <div>Icons made by <a href="https://www.flaticon.com/authors/google" title="Google">Google</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"         title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+          <div>
+            Icons made by
+            <a href="https://www.flaticon.com/authors/google" title="Google"
+              >Google</a
+            >
+            from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+            is licensed by
+            <a
+              href="http://creativecommons.org/licenses/by/3.0/"
+              title="Creative Commons BY 3.0"
+              target="_blank"
+              >CC 3.0 BY</a
+            >
+          </div>
         </footer>
       </div>
     </div>
 
     <script>
-      var myNav = document.getElementById("mynav");
+      var myNav = document.getElementById("nav-bar");
       var home = document.getElementById("home");
       window.onscroll = function() {
         "use strict";
@@ -173,6 +197,5 @@
         }
       };
     </script>
-
   </body>
 </html>
